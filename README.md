@@ -110,7 +110,7 @@ The default output directory is `drl_dp_DAATQC_results/`. It contains the final
 model, best evaluation model, checkpoints, evaluation logs, and
 `training_log.csv`.
 
-## Continuation training
+## Progressive curriculum training
 
 Continuation training tightens the success criteria to 0.20 m, 2 degrees, a
 speed threshold of 0.08, and 50 consecutive successful steps:
