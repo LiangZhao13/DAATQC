@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daatqc"
+version = "0.1.0"
+description = "Demand-Actuator Attention Truncated Quantile Critics for dynamic positioning"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "numpy==1.26.4",
+    "torch==2.2.2",
+    "gymnasium==0.29.1",
+    "stable-baselines3==2.3.2",
+    "sb3-contrib==2.3.0",
+    "pandas==2.2.2",
+    "matplotlib==3.8.4",
+]
+
+[tool.setuptools.packages.find]
+include = ["daatqc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
